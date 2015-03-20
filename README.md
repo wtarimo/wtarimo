@@ -1,5 +1,5 @@
 
-# William Tarimo | Personal Portifolio Website
+# William Tarimo | Personal Portfolio Website
 
 
 
