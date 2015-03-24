@@ -258,5 +258,5 @@ $(document).ready(function() {
 			$.waypoints('refresh');
 		},1000);
 	}
-
+	
 });	

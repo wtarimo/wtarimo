@@ -24,7 +24,6 @@
 		<link rel="stylesheet" href="css/flexslider.css">
 		<link id="main" rel="stylesheet" href="css/meflat-blue.css">
 		<link id="theme" rel="stylesheet" href="css/meflat-blue.css">
-		<link rel="stylesheet" href="css/style-switcher.css">
 		<!-- ==============================================
 		Fonts
 		=============================================== -->
@@ -69,6 +68,9 @@
 							<a href="#portfolio" class="scrollto">My Works</a>
 						</li>
 						<li>
+							<a href="#publications" class="scrollto">Publications</a>
+						</li>
+						<li>
 							<a href="#contact" class="scrollto">Contact Me</a>
 						</li>
 					</ul>
@@ -91,15 +93,19 @@
 							<img class="img-responsive img-center" src="assets/imac.png" alt=""/>
 							<div class="imac-screen flexslider">
 								<ul class="slides">
-									<li>
-										<img src="assets/slide_2.jpg" alt=""/>
-									</li>
-									<li>
-										<img src="assets/slide_3.jpg" alt=""/>
-									</li>
-									<li>
-										<img src="assets/slide_4.jpg" alt=""/>
-									</li>
+									<li><img src="assets/slides/slide_1.png"/></li>
+									<li><img src="assets/slides/slide_2.png"/></li>
+									<li><img src="assets/slides/slide_3.png"/></li>
+									<li><img src="assets/slides/slide_4.png" title="Human Eye"/></li>
+									<li><img src="assets/slides/slide_5.png" title="Plastic Waste"/></li>
+									<li><img src="assets/slides/slide_6.png"/></li>
+									<li><img src="assets/slides/slide_7.png" title="Connecticut College"/></li>
+									<li><img src="assets/slides/slide_8.png" title="Frozen Niagara Falls"/></li>
+									<li><img src="assets/slides/slide_9.png" title="IBS - Brandeis University"/></li>
+									<li><img src="assets/slides/slide_10.png"/></li>
+									<li><img src="assets/slides/slide_11.png"/></li>
+									<li><img src="assets/slides/slide_12.png"/></li>
+									<li><img src="assets/slides/slide_13.png"/></li>
 								</ul>
 							</div>
 						</div>
@@ -184,17 +190,17 @@
 				</header>
 				<div class="row">
 					<div class="col-sm-8 col-sm-offset-2">
-						<img class="img-responsive img-center img-circle scrollimation fade-left" src="assets/about.jpg" alt="" />
+						<img class="img-responsive img-center img-circle scrollimation fade-left" src="assets/about1.png" alt="" />
 						<p class="text-center scrollimation fade-in">I am William T. Tarimo, a Ph.D. Student in Computer Science at Brandeis University. My doctoral research focuses on Education Innovation. I received my Master of Arts degree in Computer Science from Brandeis University, and Bachelor of Arts degree in Computer Science and Mathematics from Connecticut College. At undergraduate I did research on four and six-legged servo-robots to learn optimal walking gaits using Cyclic Genetic Algorithms.
 						<br/>
 						<blockquote>
 						  <p class="text-capitalize">Keep a smile on your face and let your personality be your autograph.</p>
-						  <footer>Leo Daniel?</footer>
+						  <footer>Leo Daniel (?)</footer>
 						</blockquote>
 						</p>
 					</div>
 				</div>
-				<p class="text-center"><a class="btn btn-meflat scrollto white icon-left" href="#contact"><i class="fa fa-arrow-down"></i>See My Resumé</a></p>
+				<p class="text-center"><a class="btn btn-meflat white icon-left" target="_blank" href="papers/resume.pdf"><i class="fa fa-file-pdf-o"></i> See My Resumé</a></p>
 			</div>
 		</section>
 
@@ -323,6 +329,7 @@
 						<!--==== Project Preview HTML ====-->
 						<div class="sr-only project-description" 
 							data-category="PhD Research" 
+							data-client="Myself, Timothy Hickey"
 							data-date="Spring 2013 - " 
 							data-link="teachback.herokuapp.com" 
 							data-descr="“TeachBack” is a web application that facilitates more efficient and effective tools to interact in the classroom. The application and this study are part of the research of Prof. Timothy Hickey and William Tarimo" 
@@ -345,6 +352,7 @@
 						<!--==== Project Preview HTML ====-->
 						<div class="sr-only project-description" 
 							data-category="PhD Research" 
+							data-client="Myself, Timothy Hickey"
 							data-date="Spring '13 - Spring '14" 
 							data-link="http://moore.cs-i.brandeis.edu/at/www" 
 							data-descr="The original full version of TeachBack. Was created using Javascript, jQuery, jQuery Mobile and Parse for backend." 
@@ -363,171 +371,146 @@
 							<h2 class="project-title">Image Evolution</h2><!--Project Title -->
 							<p class="text-capitalize">Evolving images using transparent overlapping polygons</p><!--Project Subtitle -->
 						</div>
-						
 						<!--==== Project Preview HTML ====-->
-						
 						<div class="sr-only project-description" 
 							data-category="Class, Hobby Project"
-							data-client="Intro To Scientific Computing"
+							data-client="Myself, Linyu Dong, Chao Li, Chen Xing"
+							data-date="Spring 2013" 
 							data-descr="KeyWords: Image Evolution, Hill-climbing, Genetic Algorithms, Image Processing" 
-							data-images="assets/projects/preview_3_1.jpg,assets/projects/preview_3_2.jpg,assets/projects/preview_3_3.jpg"
+							data-images="assets/projects/dribbble_3.jpg,assets/projects/preview_3_1.png,assets/projects/preview_3_2.png,assets/projects/preview_3_3.png"
 						>
 							<p>In this project we used genetic algorithm and hill-climbing theories to implement a system to machine-learn optimal attributes and arrangements of polygons that recreates a target image. The polygons can be of any one chosen shape, the arrangements are (x,y) coordinates on the canvas &amp; overlapping order of each polygon, and attributes are color value(s), size, transparency and so on, for each polygon. The idea is to start with a randomly generated population of polygons and use a fitness function to evolve the population towards a set of arrangements and attributes of the polygons that are a close approximation of the features  of a target image. </p>
-							
 							<p>Our project attempted to use machine learning to recreate or redefine features of an image using an arrangement of trans- parent overlapping polygons. From Genetic Evolution and Hill Climbing, we came up an implementation that starts by generating a random sequence of polygons then iteratively mutating the sequence (slightly modifying a random attribute of a random polygon), incrementally building on mutations that yield results that are closer to a target image[3]. In the context of evolving images using polygons, we learned and explored the balance between visual appeal of the generated images and the efficiency of the implementation.</p>
-							<p class="text-right"><a class="btn btn-meflat icon-left" href="#external-link"><i class="fa fa-file-powerpoint-o"></i>View Presentation</a> <a class="btn btn-meflat icon-left" href="assets/projects/ImageEvolution_Paper.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i>View Project Report</a></p>
+							<div class="col-sm-6">
+								<div class="form-group">
+						        <div class="videoUiWrapper thumbnail">
+						            <video width="100%" controls>
+						                <source src="assets/projects/gray_evolution.mp4" type="video/mp4" />
+						                Your browser does not support the video tag.
+						            </video>
+						        </div>
+						    </div>
+						  </div>
+						  <div class="col-sm-6">
+								<div class="form-group">
+						        <div class="videoUiWrapper thumbnail">
+						            <video width="100%" controls>
+						                <source src="assets/projects/color_evolution.mp4" type="video/mp4" />
+						                Your browser does not support the video tag.
+						            </video>
+						        </div>
+						    </div>
+						  </div>
+							<p class="text-right"><a class="btn btn-meflat icon-left" href="papers/ImageEvolution_Paper.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i>View Project Report</a></p>
 						</div>
 					</article><!--End Project Item -->
 
 					<article class="project-item research">
-						
 						<img class="img-responsive project-image" src="assets/projects/dribbble_4.jpg"  alt=""><!--Project thumb -->
-						
 						<div class="hover-mask">
 							<h2 class="project-title">PAL With Fitness Biasing</h2><!--Project Title -->
 							<p>Punctuated Anytime Learning in Evolutionary Robotics</p><!--Project Subtitle -->
 						</div>
-						
 						<!--==== Project Preview HTML ====-->
-						
 						<div class="sr-only project-description" 
-							data-category="UI-Kits" 
-							data-date="November 2013"
-							data-link="www.example.com,http://www.google.com" 
-							data-descr="This is a place for a quick description of the project. Use it or not to say a little things about the project." 
-							data-images="assets/projects/blog-ui-full-1.jpg,assets/projects/blog-ui-full-2.jpg,assets/projects/blog-ui-full-3.jpg"
-						>
+							data-category="Undergraduate Research" 
+							data-client="Myself, Gary Parker"
+							data-date="Summer '11 - Summer '12"
+							data-descr="Used wireless communication, computer simulation and camera vision to develop a machine-learning system that uses on-ground mobile robots to learn adaptive and unique control programs." 
+							data-images="assets/projects/preview_4_1.png,assets/projects/preview_4_2.png,assets/projects/preview_4_3.png,assets/projects/preview_4_4.png,assets/projects/preview_4_5.png"
+						>	
+							<p>This work was based on an internship with Prof. Gary Parker at Connecticut College. The internship was based on a research project to develop a machine learning system that utilizes machine learning using a computer simulation of a robot, wireless communication and an over-head camera vision to learn control programs for on-ground mobile robots. The internship involved intense computer programming, robotics design and construction, systems design, assembly and construction, and utilization of theories of artificial intelligence and evolutionary computation. I spent about 10 fun and busy weeks in a Computer Science lab where I mostly worked alone under Prof Parker’s supervision and help whenever necessary. </p>
 							<p>This research uses periodic tests on the actual robot to test the control programs learned on the robot model by evolutionary computation and improve the learning process by altering the learning algorithm (Fitness Biasing) or changing the model (Co-Evolving Model Parameters).</p>
-							
-							<p>Phasellus porta eros vel lacus euismod consequat. Phasellus eleifend, nibh non feugiat hendrerit, lacus enim adipiscing eros, a pharetra erat neque eget est. Quisque vitae aliquet urna. Integer suscipit lectus eu enim porttitor fringilla. Ut blandit, urna in auctor euismod, arcu eros pharetra metus, a porta purus libero a nibh.</p>
-							<p>Nam eget urna pellentesque nisl ultrices dapibus. Mauris accumsan vehicula nisl, sed tempus mauris facilisis eu. Donec a iaculis nisi, quis malesuada justo. Pellentesque ut enim sit amet ipsum dignissim egestas. Morbi tincidunt rhoncus urna eget placerat.</p>
 						</div>
-						
 					</article><!--End Project Item -->
 
 					<article class="project-item research">
-						
 						<img class="img-responsive project-image" src="assets/projects/dribbble_6.jpg"  alt="Cyclic Genetic Algorithms"><!--Project thumb -->
-						
 						<div class="hover-mask">
 							<h2 class="project-title">Cyclic Genetic Algorithms</h2><!--Project Title -->
 							<p>Using CGAs to Generate Gaits for Legged Robots</p><!--Project Subtitle -->
 						</div>
-						
 						<!--==== Project Preview HTML ====-->
 						
 						<div class="sr-only project-description"
-							data-descr="This project doesn't include attributes in the sidebar. Just a small description is enough." 
-							data-images="assets/projects/preview_5_1.jpg,assets/projects/preview_5_2.jpg"
+							data-category="Undergraduate Research" 
+							data-client="Myself, Gary Parker"
+							data-date="Summer '10 - Summer '11"
+							data-descr="Gait generation and coordination involves a series of actions that are continually repeated to create a sustained movement." 
+							data-images="assets/projects/preview_5_1.jpg,assets/projects/preview_5_2.jpg,assets/projects/preview_5_3.jpg"
 						>
-							<p>This project involves the design of a four-legged robot with legs having three degrees of freedom (the hexapod robots we use have only two) and its controller. The CGA is being used to learn the control programs needed to produce its gaits.</p>
-							
-							<p>Phasellus porta eros vel lacus euismod consequat. Phasellus eleifend, nibh non feugiat hendrerit, lacus enim adipiscing eros, a pharetra erat neque eget est. Quisque vitae aliquet urna. Integer suscipit lectus eu enim porttitor fringilla. Ut blandit, urna in auctor euismod, arcu eros pharetra metus, a porta purus libero a nibh.</p>
-							<p>Nam eget urna pellentesque nisl ultrices dapibus. Mauris accumsan vehicula nisl, sed tempus mauris facilisis eu. Donec a iaculis nisi, quis malesuada justo. Pellentesque ut enim sit amet ipsum dignissim egestas. Morbi tincidunt rhoncus urna eget placerat.</p>
-							<p class="text-right"><a class="btn btn-meflat icon-left" href="#external-link"><i class="fa fa-dribbble"></i>View on Dribble</a></p>
+							<p>In project we use a Cyclic Genetic Algorithm (CGA) to learn optimal gaits for a quadruped servo-robot with three degrees of movement per leg. An actual robot was used to generate a simulation model of the movement and states of the robot. The CGA used the robot’s unique features and capabilities to develop gaits specific for that particular robot. Tests done in simulation show the success of the CGA in evolving a reasonable control program and preliminary tests on the robot show that the resultant control program produces a suitable gait.</p>
+					    <div class="form-group">
+					        <div class="videoUiWrapper thumbnail">
+					            <video width="100%" controls>
+					                <source src="assets/projects/gait_full.mp4" type="video/mp4" />
+					                Your browser does not support the video tag.
+					            </video>
+					        </div>
+					    </div>
+
+					    <div class="form-group">
+					        <div class="videoUiWrapper thumbnail">
+					            <video width="100%" controls>
+					                <source src="assets/projects/gait_2000.mp4" type="video/mp4" />
+					                Your browser does not support the video tag.
+					            </video>
+					        </div>
+					    </div>
 						</div>
-						
 					</article><!--End Project Item -->
 
 					<article class="project-item research">
-						
 						<img class="img-responsive project-image" src="assets/projects/dribbble_7.jpg"  alt=""><!--Project thumb -->
-						
 						<div class="hover-mask">
 							<h2 class="project-title">Greedy Genetic Evolution</h2><!--Project Title -->
 							<p>The Effects of Using a Greedy Factor in Hexapod Gait Learning</p><!--Project Subtitle -->
 						</div>
-						
 						<!--==== Project Preview HTML ====-->
-						
 						<div class="sr-only project-description" 
-							data-category="Icons"
-							data-client="Google Inc." 
-							data-link="www.google.com,http://www.google.com" 
-							data-descr="All of the Project Attributes above this text are optional. This project doesn't include a date attribute." 
-							data-images="assets/projects/preview_6_1.jpg,assets/projects/preview_6_2.jpg"
+							data-category="Undergraduate Research" 
+							data-client="Myself, Gary Parker"
+							data-date="Summer '10 - Summer '11"
+							data-descr="Using just the right amount of selection bias in training can improve the genetic evolution results in various desired aspects." 
+							data-images="assets/projects/preview_6_1.jpg,assets/projects/preview_6_2.jpg,assets/projects/preview_6_3.jpg,assets/projects/preview_6_4.jpg"
 						>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
+							<p>This project investigates a new selection scheme that is tested using a Cyclic Genetic Algorithm (CGA) for learning gaits for a hexapod servo-robot. The effectiveness of CGA in learning optimal gaits with roulette wheel selection and selection with greedy factors is compared. The results were analyzed based on fitness of the individual generated gaits, convergence time of the evolution process, and the fitness of the entire populations evolved. In this work, we use a previously developed CGA to learn gaits using a simulation model created from an actual hexapod robot. Results demonstrate that greedy factors tested tend to prematurely converge with sub-optimal fitness, whereas training with roulette wheel selection evolves more diverse populations with individuals that result in the desired optimal gaits.</p>
 							
-							<p>Phasellus porta eros vel lacus euismod consequat. Phasellus eleifend, nibh non feugiat hendrerit, lacus enim adipiscing eros, a pharetra erat neque eget est. Quisque vitae aliquet urna. Integer suscipit lectus eu enim porttitor fringilla. Ut blandit, urna in auctor euismod, arcu eros pharetra metus, a porta purus libero a nibh.</p>
-							<p>Nam eget urna pellentesque nisl ultrices dapibus. Mauris accumsan vehicula nisl, sed tempus mauris facilisis eu. Donec a iaculis nisi, quis malesuada justo. Pellentesque ut enim sit amet ipsum dignissim egestas. Morbi tincidunt rhoncus urna eget placerat.</p>
-							<p class="text-right"><a class="btn btn-meflat icon-right" href="#external-link">Visit Website<i class="fa fa-arrow-right"></i></a></p>
 						</div>
-						
-					</article><!--End Project Item -->
-					
-					<article class="project-item class hobbies">
-						
-						<img class="img-responsive project-image" src="assets/projects/dribbble_9.jpg"  alt=""><!--Project thumb -->
-						
-						<div class="hover-mask">
-							<h2 class="project-title">CFC Score Predictor</h2><!--Project Title -->
-							<p>A Python based game for predicting soccer scores</p><!--Project Subtitle -->
-						</div>
-						
-						<!--==== Project Preview HTML ====-->
-						
-						<div class="sr-only project-description" 
-							data-category="UI-Kits" 
-							data-date="August 2013"
-							data-link="www.example.com,http://www.google.com" 
-							data-descr="All of the Project Attributes above this text are optional. This project doesn't include a client attribute." 
-							data-images="assets/projects/flat-ui-full-1.jpg,assets/projects/flat-ui-full-2.jpg"
-						>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
-							
-							<p>Phasellus porta eros vel lacus euismod consequat. Phasellus eleifend, nibh non feugiat hendrerit, lacus enim adipiscing eros, a pharetra erat neque eget est. Quisque vitae aliquet urna. Integer suscipit lectus eu enim porttitor fringilla. Ut blandit, urna in auctor euismod, arcu eros pharetra metus, a porta purus libero a nibh.</p>
-							<p>Nam eget urna pellentesque nisl ultrices dapibus. Mauris accumsan vehicula nisl, sed tempus mauris facilisis eu. Donec a iaculis nisi, quis malesuada justo. Pellentesque ut enim sit amet ipsum dignissim egestas. Morbi tincidunt rhoncus urna eget placerat.</p>
-						</div>
-						
 					</article><!--End Project Item -->
 
 					<article class="project-item class hobbies">
-						
 						<img class="img-responsive project-image" src="assets/projects/dribbble_8.jpg"  alt=""><!--Project thumb -->
-						
 						<div class="hover-mask">
 							<h2 class="project-title">BrandITE</h2><!--Project Title -->
-							<p>A Phonegap based web app for voting suggesting and voting on discussion topics for the BrandITE club</p><!--Project Subtitle -->
+							<p>A Phonegap based web app for suggesting and voting on discussion topics for the BrandITE club</p><!--Project Subtitle -->
 						</div>
-						
 						<!--==== Project Preview HTML ====-->
-						
 						<div class="sr-only project-description" 
-							data-category="UI-Kits" 
-							data-date="July 2013" 
-							data-client="Company Inc." 
-							data-link="www.example.com,http://www.google.com" 
-							data-descr="This is a place for a quick description of the project. Use it or not to say a little things about the project." 
-							data-images="assets/projects/preview_8_1.jpg,assets/projects/preview_8_2.jpg"
+							data-category="Hobby" 
+							data-date="Fall 2013" 
+							data-client="MySelf" 
+							data-link="http://moore.cs-i.brandeis.edu/BrandITE/" 
+							data-descr="Written in Javascript, jQuery, jQuery Mobile and Parse." 
+							data-images="assets/projects/preview_8_1.jpg,assets/projects/preview_8_2.jpg,assets/projects/preview_8_3.jpg"
 						>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
-							
-							<p>Phasellus porta eros vel lacus euismod consequat. Phasellus eleifend, nibh non feugiat hendrerit, lacus enim adipiscing eros, a pharetra erat neque eget est. Quisque vitae aliquet urna. Integer suscipit lectus eu enim porttitor fringilla. Ut blandit, urna in auctor euismod, arcu eros pharetra metus, a porta purus libero a nibh.</p>
-							<p>Nam eget urna pellentesque nisl ultrices dapibus. Mauris accumsan vehicula nisl, sed tempus mauris facilisis eu. Donec a iaculis nisi, quis malesuada justo. Pellentesque ut enim sit amet ipsum dignissim egestas. Morbi tincidunt rhoncus urna eget placerat.</p>
-							<p class="text-right"><a class="btn btn-meflat icon-left" href="#external-link"><i class="fa fa-dribbble"></i>View on Dribble</a></p>
+							<p>A simple, mobile friendly Javascipt web app for managing discussion topics for a club.</p>
+							<p class="text-right"><a class="btn btn-meflat icon-left" href="http://moore.cs-i.brandeis.edu/BrandITE/" target="_blank"><i class="fa fa-dribbble"></i>Visit BrandITE</a></p>
 						</div>
-						
 					</article><!--End Project Item -->
+
 				</div><!-- End projects --> 
-				
 			</div><!-- End container --> 
 			
 			<!-- ==============================================
 			PROJECT PREVIEW MODAL (Do not alter this markup)
 			=============================================== -->	
 			<div id="project-modal" class="modal fade" data-backdrop="static">
-			
 				<div class="modal-dialog">
-				
 					<div class="modal-content">
-					
 						<div class="modal-header">
-						
 							<div class="container">
-							
 								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-								
 								<h1 id="hdr-title" class="text-center"></h1>
 								<div class="row">
 									<div class="col-md-8 col-md-offset-2">
@@ -539,9 +522,7 @@
 									</div>
 								</div>
 							</div>
-							
 						</div>
-						
 						<div class="modal-body">
 							<div class="container">
 								<div class="row">
@@ -556,73 +537,186 @@
 									<div id="project-content" class="col-md-8 col-md-offset-1">
 									</div>
 								</div>
-								
 							</div>
 						</div><!-- End modal-body -->
-						
 					</div><!-- End modal-content -->
-					
 				</div><!-- End modal-dialog -->
-				
 			</div><!-- End modal -->
-			
 		</section>
+
 		<!-- ==============================================
 		DRIBBLE 
 		=============================================== -->	
-		<section id="dribbble">
-			<h1 class="dribbble-button"><a href="http://dribbble.com/pixeden" target="_blank">My Dribbble Shots</a></h1>
-				<div class="row">
-					<div class="col-md-2 col-sm-4 col-xs-6">
-						<a href="http://dribbble.com/pixeden" target="_blank"><img class="img-responsive" src="assets/dribbble_1.jpg"  alt=""></a>
+		<section id="publications" class="big-padding light-typo color-overlay2">
+			<div class="container">
+					<h1 class="section-title text-center">Research Publications</h1>
+					<div class="row">
+						<h4 class="section-title text-center">2015</h4>
+					  <ul class="list-group scrollimation fade-right">
+
+					  <!-- ==============================================
+					  	<li class="list-group-item text-center col-xs-12 col-md-6 ">
+					    	<h4 class="list-group-item-heading">Early Detection of At-Risk Students in CS1 Using TeachBack/Spinoza</h4>
+    						<p class="list-group-item-text">
+    							William T. Tarimo, Fatima Abu Deeb, Timothy J. Hickey<br>
+    							Submitted To: <em>18th International Conference on Interactive Collaborative Learning</em><br>
+    							September 2015, Florence, Italy.<br>
+    							<small class="text-right">
+    								<a href="http://icl-conference.org/icl2015/" target="_blank"><i class="fa fa-newspaper-o"></i> ICL 2015</a>
+    							</small>
+    						</p>
+					    </li>
+					    =============================================== -->	
+
+					    <li class="list-group-item text-center col-xs-12 col-md-6 ">
+					    	<h4 class="list-group-item-heading">Computers in the CS1 Classroom</h4>
+    						<p class="list-group-item-text">
+    							William T. Tarimo, Fatima Abu Deeb, Timothy J. Hickey<br>
+    							To Appear In: <em>The 7th International Conference on Computer Supported Education</em><br>
+    							May 2015, Lisbon, Portugal.<br>
+    							<small class="text-right">
+    								<a href="papers/csedu_2015.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> PDF</a> | 
+    								<a href="http://www.csedu.org/" target="_blank"><i class="fa fa-newspaper-o"></i> CSEDU 2015</a>
+    							</small>
+    						</p>
+					    </li>
+
+					    <li class="list-group-item text-center col-xs-12 col-md-6 ">
+					    	<h4 class="list-group-item-heading">Adopting a 'Flipped' Interactive Pedagogy Using TeachBack</h4>
+    						<p class="list-group-item-text">
+    							William T. Tarimo, Timothy J. Hickey<br>
+    							To Appear In:<em>Consortium for Computing Sciences in Colleges — Northeastern Region</em><br>
+    							April 2015, Worcester, Massachusetts, USA.<br>
+    							<small class="text-right">
+    								<a href="papers/CCSCNE15.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> PDF</a> | 
+    								<a href="http://ccscne.org/conferences/ccscne-2015/" target="_blank"><i class="fa fa-newspaper-o"></i> CCSCNE 2015</a>
+    							</small>
+    						</p>
+					    </li>
+					  </ul>
 					</div>
-					<div class="col-md-2 col-sm-4 col-xs-6">
-						<a href="http://dribbble.com/pixeden" target="_blank"><img class="img-responsive" src="assets/dribbble_2.jpg"  alt=""></a>
+
+					<div class="row">
+						<h4 class="section-title text-center">2014</h4>
+					  <ul class="list-group scrollimation fade-right">
+					    <li class="list-group-item text-center col-xs-12 col-md-6 ">
+					    	<h4 class="list-group-item-heading">The Affective Tutor</h4>
+    						<p class="list-group-item-text">
+    							Timothy J. Hickey, William T. Tarimo<br>
+    							<em>Journal of Computing Sciences in Colleges, 29(6), pp. 50-56, 2014.</em><br>
+    							April 2014, Providence, Rhode Island, USA.<br>
+    							<small class="text-right">
+    								<a href="papers/CCSCNE14.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> PDF</a> | 
+    								<a href="http://ccscne.org/conferences/ccscne2014/" target="_blank"><i class="fa fa-newspaper-o"></i> CCSCNE 2014</a>
+    							</small>
+    						</p>
+					    </li>
+					  </ul>
 					</div>
-					<div class="col-md-2 col-sm-4 col-xs-6">
-						<a href="http://dribbble.com/pixeden" target="_blank"><img class="img-responsive" src="assets/dribbble_3.jpg"  alt=""></a>
-					</div>
-					<div class="col-md-2 col-sm-4 col-xs-6">
-						<a href="http://dribbble.com/pixeden" target="_blank"><img class="img-responsive" src="assets/dribbble_4.jpg"  alt=""></a>
-					</div>
-					<div class="col-md-2 col-sm-4 col-xs-6">
-						<a href="http://dribbble.com/pixeden" target="_blank"><img class="img-responsive" src="assets/dribbble_5.jpg"  alt=""></a>
-					</div>
-					<div class="col-md-2 col-sm-4 col-xs-6">
-						<a href="http://dribbble.com/pixeden" target="_blank"><img class="img-responsive" src="assets/dribbble_6.jpg"  alt=""></a>
+
+					<div class="row">
+						<h4 class="section-title text-center">2011</h4>
+					  <ul class="list-group scrollimation fade-right">
+					    <li class="list-group-item text-center col-xs-12 col-md-6 ">
+					    	<h4 class="list-group-item-heading">Using Cyclic Genetic Algorithms to Learn Gaits for an Actual Quadruped Robot</h4>
+    						<p class="list-group-item-text">
+    							Gary B. Parker and William T. Tarimo<br>
+    							<em>Proceedings of the 2011 IEEE International Conference on Systems, Man, and Cybernetics</em><br>
+    							October 2011, Anchorage, Alaska, USA.<br>
+    							<small class="text-right">
+    								<a href="papers/SMC2011_Quad.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> PDF</a> | 
+    								<a href="http://www.ieee.org/conferences_events/conferences/conferencedetails/index.html?Conf_ID=15399" target="_blank"><i class="fa fa-newspaper-o"></i> SMC 2011</a>
+    							</small>
+    						</p>
+					    </li>
+
+					    <li class="list-group-item text-center col-xs-12 col-md-6 ">
+					    	<h4 class="list-group-item-heading">Quadruped Gait Learning Using Cyclic Genetic Algorithms</h4>
+    						<p class="list-group-item-text">
+    							Gary B. Parker, William T. Tarimo, and Michael Cantor<br>
+    							<em>Proceedings of the 2011 IEEE Congress on Evolutionary Computation</em><br>
+    							June 2011, New Orleans, Louisiana, USA.<br>
+    							<small class="text-right">
+    								<a href="papers/CEC2011_quad.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> PDF</a> | 
+    								<a href="http://www.ieee.org/conferences_events/conferences/conferencedetails/index.html?Conf_ID=15497" target="_blank"><i class="fa fa-newspaper-o"></i> CEC 2011</a>
+    							</small>
+    						</p>
+					    </li>
+
+					    <li class="list-group-item text-center col-xs-12 col-md-6 ">
+					    	<h4 class="list-group-item-heading">The Effects of Using a Greedy Factor in Hexapod Gait Learning</h4>
+    						<p class="list-group-item-text">
+    							Gary B. Parker and William T. Tarimo<br>
+    							<em>Proceedings of the 2011 IEEE Congress on Evolutionary Computation</em><br>
+    							June 2011, New Orleans, Louisiana, USA.<br>
+    							<small class="text-right">
+    								<a href="papers/CEC2011_hex_greedy.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> PDF</a> | 
+    								<a href="http://www.ieee.org/conferences_events/conferences/conferencedetails/index.html?Conf_ID=15497" target="_blank"><i class="fa fa-newspaper-o"></i> SMC 2011</a>
+    							</small>
+    						</p>
+					    </li>
+					  </ul>
 					</div>
 				</div>
-		</section>
-		<!-- ==============================================
-		CONTACT
-		=============================================== -->	
-		<section id="contact" class="dark-bg light-typo padding-top">
-			<div class="container">
-				<header class="section-header text-center">
-					<h1 class="scrollimation scale-in">Drop Me a Line</h1>
-					<p>I am available for freelance.<br/>Can't wait for the next exciting project! Could be yours?</p>
-				</header>
-				
-				<form  id="contact-form" class="bl_form text-center" action="contact.php" method="post" novalidate>
-					<span class="field-wrap scrollimation fade-right">
-						<label class="control-label" for="contact-name">Name</label>
-						<input id="contact-name" name="contactName" type="text" class="label_better requiredField" data-new-placeholder="Name" placeholder="Name" data-error-empty="*Enter your name">
-					</span>
-					<span class="field-wrap scrollimation fade-in">
-						<label class="control-label" for="contact-mail">Email</label>
-						<input id="contact-mail" name="email" type="email" class="label_better requiredField" data-new-placeholder="Email Address" placeholder="Email Address" data-error-empty="*Enter your email" data-error-invalid="x Invalid email address">
-					</span>
-					<span class="field-wrap scrollimation fade-left">
-						<label class="control-label" for="contact-message">Message</label>
-						<textarea id="contact-message" name="comments" rows="1" class="label_better requiredField" data-new-placeholder="Message" placeholder="Message" data-error-empty="*Enter your message"></textarea>
-					</span>
-					
-					<p class="text-center"><button  name="submit" type="submit" class="btn btn-meflat icon-left" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Message Sent"><i class="fa fa-paper-plane"></i>Send Message</button></p>
-					<input type="hidden" name="submitted" id="submitted" value="true" />
-				</form>
-			</div>
+			</section>
 		
-		</section>
+		<!-- ==============================================
+			CONTACT
+			=============================================== -->
+			<section id="contact" class="big-padding light-typo color-overlay">
+				<div class="container">
+					<h1 class="section-title text-center">Contact Me</h1>
+					<div class="row">
+						<div class="col-sm-6 col-md-5 scrollimation fade-right">
+							<p class="lead" style="margin-bottom: 0px;">Drop Me A Line</p><p class="text-center"> ... Any Line!</p>
+							<address>
+							  <strong>William Tarimo</strong><br>
+							  Brandeis University<br>
+								415 South Street, MS018<br>
+								Waltham, MA 02453<br>
+								<abbr title="Phone"><i class="fa fa-phone-square"></i> </abbr> (+1) 860-501-7893
+							</address>
+							<div class="social-links">
+								<a href="https://twitter.com/naspipper" target="_blank"><i class="fa fa-fw fa-twitter-square"></i></a>
+								<a href="https://www.facebook.com/naspipper" target="_blank"><i class="fa fa-fw fa-facebook-official"></i></a>
+								<a href="https://www.linkedin.com/profile/view?id=126283087" target="_blank"><i class="fa fa-fw fa-linkedin-square"></i></a>
+								<a href="https://github.com/wtarimo" target="_blank"><i class="fa fa-fw fa-github-square"></i></a>
+								<a href="http://www.brandeis.edu/" target="_blank"><i class="fa fa-university"></i></a>
+							</div>
+							<p><abbr title="E-mail"><i class="fa fa-envelope-o"></i></abbr> <a href="mailto:wtarimo@brandeis.edu">wtarimo@brandeis.edu</a></p>
+						</div>
+					
+						<!--=== Contact Form -->
+
+						<form id="contact-form" class="col-sm-6 col-md-offset-1 scrollimation fade-left" action="contact.php" method="post" novalidate>
+							<div class="form-group">
+								<div class="controls">
+									<input id="contact-name" name="contactName" class="form-control requiredField" type="text" data-error-empty="is required">
+									<label class="control-label" for="contact-name">Name</label>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<div class="controls">
+									<input id="contact-mail" name="email" class="form-control requiredField" type="email" data-error-empty="is required" data-error-invalid="is invalid">
+									<label class="control-label" for="contact-mail">Email</label>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<div class="controls">
+									<textarea id="contact-message" name="comments" class="form-control requiredField" rows="6" data-error-empty="is required"></textarea>
+									<label class="control-label" for="contact-message">Message</label>
+								</div>
+							</div>
+							
+							<button name="submit" type="submit" class="btn" data-error-message="Please fill the required fields" data-sending-message="Sending Message" data-ok-message="Your Message has been sent!"><i class="fa fa-paper-plane"></i> Send It</button>
+							<input type="hidden" name="submitted" id="submitted" value="true" />
+						</form> 
+						<!--End contact-form -->
+					</div>
+				</div>
+			</section>
 		
 		<!-- ==============================================
 		FOOTER
@@ -632,25 +726,12 @@
 			<div class="container">
 				<hr>
 				<div class="row">
-					<div class="col-sm-6">
-						<ul class="social-links">
-							<li class="scrollimation fade-right d4"><a href="#link"><i class="fa fa-twitter fa-fw"></i></a></li>
-							<li class="scrollimation fade-right d3"><a href="#link"><i class="fa fa-facebook fa-fw"></i></a></li>
-							<li class="scrollimation fade-right d2"><a href="#link"><i class="fa fa-google-plus fa-fw"></i></a></li>
-							<li class="scrollimation fade-right d1"><a href="#link"><i class="fa fa-dribbble fa-fw"></i></a></li>
-							<li class="scrollimation fade-right"><a href="#link"><i class="fa fa-linkedin fa-fw"></i></a></li>
-						</ul>
+					<div class="col-xs-12 text-center fade-in">
+						<p>William T. Tarimo | A Personal Portfolio Website | &copy;2015 </p>
 					</div>
-					<div class="col-sm-6 text-right scrollimation fade-in">
-						<p>&copy;2014 Me Flat Theme by <a href="https://wrapbootstrap.com/user/qthemes" target="_blank">Qthemes</a></p>
-					</div>
-					
 				</div>
-				
 			</div>
-			
 		</footer>
-		
 		
 		<!-- ==============================================
 		SCRIPTS
@@ -668,28 +749,7 @@
 		<script src="js/jquery.label_better.min.js"></script>
 		<script src="js/jquery.easypiechart.js"></script>
 		<script src="js/contact.js"></script>
-		<script src="js/meflat.js"></script>
-		<script src="js/style-switcher.js"></script>
-		
-		<!--Style Switcher-->
-		<div id="style-switcher">
-		<div id="toggle-switcher"><i class="fa fa-tint"></i></div>
-		<h1>Change Color</h1>
-		<ul>
-			<li id="red"></li>
-			<li id="orange"></li>
-			<li id="yellow-orange"></li>
-			<li id="yellow"></li>
-			<li id="grass"></li>
-			<li id="green"></li>
-			<li id="light-green"></li>
-			<li id="cyan"></li>
-			<li id="blue"></li>
-			<li id="cyan2"></li>
-			<li id="purple"></li>
-			<li id="pink"></li>
-		</ul>
-		</div><!--End Style Switcher-->
+		<script src="js/meflat.js"></script>		
 		
 	</body>
 	
