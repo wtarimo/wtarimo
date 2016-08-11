@@ -1,0 +1,7 @@
+User-Agent: *
+Disallow: /css/
+Disallow: /js/
+Disallow: /papers/
+Disallow: /assets/skills/
+Disallow: /assets/slides/
+Sitemap: http://www.cs.brandeis.edu/~wtarimo/sitemap.xml
