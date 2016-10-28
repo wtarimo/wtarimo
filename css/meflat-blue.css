@@ -1181,17 +1181,17 @@ a:focus,
     text-decoration: none;
 }
 
-#contact .social-links{
+#contact .account-links{
     margin:30px 0;
     font-size: 28px;
 }
 
-#contact .social-links .fa{
+#contact .account-links .fa{
     -webkit-transition:color .15s ease-out;
     transition:color .15s ease-out;
 }
 
-#contact .social-links a:hover .fa{
+#contact .account-links a:hover .fa{
     color:#00CCCB !important;
 }
 
