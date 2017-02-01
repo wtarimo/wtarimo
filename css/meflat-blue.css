@@ -16,6 +16,11 @@ h1, h2, h3, h4, h5, h6{
     margin:0 0 20px;
 }
 
+.logo_text {
+  font-size:21px;
+  font-family: 'Lobster', cursive;
+}
+
 h1 {
     font-size: 34px !important;
 }
@@ -328,8 +333,11 @@ a:focus,
     color:#fff; 
 }
 
-#main-nav.scrolled .nav a{
-    color:inherit; 
+.logo_text a,
+.logo_text a:active,
+.logo_text a:hover {
+    text-transform:none !important;
+    font-size: 30px !important;
 }
 
 #main-nav li{

@@ -1,5 +1,5 @@
 <?php 
-$emailTo = 'wtarimo@brandeis.edu';
+$emailTo = 'wtarimo@wtarimo.com';
 $siteTitle = "William's Personal Website";
 $nameTo = 'William';
 
